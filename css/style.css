@@ -1,0 +1,128 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+nav.bg-dark {
+    background: linear-gradient(#6b385b, #0000) !important;
+    height: 4em;
+}
+
+nav .logo {
+    width: 50px;
+    position: relative;
+}
+
+.logo {
+    width: 25em;
+}
+
+#bg .cabeca {
+    width: 8em;
+    position: absolute;
+    top: 2em;
+    left: 5em;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: big john;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+div#bg {
+    background-image: url(../img/rickcagao.jpg);
+    background-size: cover;
+}
+
+div.space {
+    height: 300px;
+    background: url(../img/catspace.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: none;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: linear-gradient( to top, black, rgba(0, 0, 0, 0)), url(../img/catspace.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div .columns {
+    padding: 4em;
+    align-items: center;
+}
+
+div .columns.texto {
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+div .columns.texto h2 {
+    text-align: end;
+    font-size: 50px;
+    color: gray
+}
+
+div .columns.texto p {
+    font-size: 25px;
+    color: grey;
+    text-align: end;
+}
+
+div .columns.texto:hover {}
+
+div .columns.midia img {
+    width: 85%;
+}
+
+div .columns.midia {
+    width: auto;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.columns.midia .flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+div .columns.midia:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper .front, .flipper .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flipper .front {}
+
+.flipper .back {
+    transform: rotateY(180deg);
+}
